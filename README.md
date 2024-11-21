@@ -7,6 +7,8 @@
 
 This document provides detailed documentation for a simple banking application, developed as part of a technical test for the company Valesa. The purpose of the application is to demonstrate backend development skills, particularly in creating a functional banking system using the Go programming language.
 
+**I think this solution is not the best, but given the time I have and the scope outlined in the prompt, I believe it meets all the requirements. I think there are two areas that could be greatly improved. The first is concurrency control using mutexes, as the current implementation overlocks the structure for both reading and writing. Implementing a mutex for each account could significantly optimize the application. On the other hand, the code structure and documentation are also areas that would become crucial to refine if the application were to scale. However, I believe addressing these aspects would greatly extend the current application and go beyond the intended scope.**
+
 ## Application Overview
 
 The application is a basic banking system built in Go, utilizing the **Gin** framework to create a RESTful API. The system allows users to:
